@@ -32,4 +32,9 @@ def decode(encoded):
   #hand back the list of coordinates
   return decoded
 
-print decode(sys.argv[1])
+if __name__ == '__main__':
+   if len(sys.argv) > 1:
+       decode(sys.argv[1])
+       print decode(sys.argv[1])
+   else:
+       print "Please pass correct argument"

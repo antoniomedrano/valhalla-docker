@@ -1,1 +1,1 @@
-{"locations": [{"lat": 34.4178674379245,"lon": -119.87054944038391,"street": "Bolton Walk"}, {"lat": 34.43177945000364,"lon": -119.82655048370361,"street": "Pine"}],"costing": "auto","directions_options": {"units": "miles"}}
+{"locations": [{"lat": 34.4178674379245,"lon": -119.87054944038391,"street": "Bolton Walk"}, {"lat": 34.43177945000364,"lon": -119.82655048370361,"street": "Pine"}],"costing": "auto","directions_options": {"units": "kilometers"}}
