@@ -1,5 +1,5 @@
 FROM ubuntu:trusty
-MAINTAINER Dario Andrei <wouldgo84@gmail.com>
+MAINTAINER Tim Niblett <tniblett@arogi.com>
 
 ENV TERM xterm
 RUN apt-get update && apt-get upgrade -y
@@ -46,7 +46,9 @@ ADD ./conf /conf
 
 RUN ldconfig
 
-RUN wget https://s3.amazonaws.com/metro-extracts.mapzen.com/trento_italy.osm.pbf
+#Set the protobuffer for valhalla here
+#RUN wget https://s3.amazonaws.com/metro-extracts.mapzen.com/trento_italy.osm.pbf
+RUN wget http://download.geofabrik.de/north-america/us/california-latest.osm.pbf
 
 RUN mkdir -p /data/valhalla
 RUN pbfadminbuilder -c conf/valhalla.json *.pbf
