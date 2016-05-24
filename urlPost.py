@@ -1,3 +1,4 @@
+#Created by Tim Niblett 05/2016 - this posts data to the valhalla router
 #!/usr/bin/env python
 import sys
 import json
@@ -18,7 +19,9 @@ def pyCurl(input): #Define function to send request
     response = r.json()
     path_length = response['trip']['legs'][0]['summary']['length']
     coords = response['trip']['legs'][0]['shape']
+    print path_length
     return pdecode.decode(coords)
+
 
 def read_problem(file):
   global js

@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-
+#This code is a modified form of Mapzen's decoder modified by Tim Niblett
+#https://mapzen.com/documentation/turn-by-turn/decoding/ 
 import sys
 
 #six degrees of precision in valhalla
