@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-
+#This code is a modified form of Mapzen's decoder modified by Tim Niblett
+#https://mapzen.com/documentation/turn-by-turn/decoding/ 
 import sys
 
 #six degrees of precision in valhalla
@@ -32,4 +33,9 @@ def decode(encoded):
   #hand back the list of coordinates
   return decoded
 
-print decode(sys.argv[1])
+if __name__ == '__main__':
+   if len(sys.argv) > 1:
+       decode(sys.argv[1])
+       print decode(sys.argv[1])
+   else:
+       print "Please pass correct argument"

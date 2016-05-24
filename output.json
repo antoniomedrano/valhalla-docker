@@ -1,0 +1,117 @@
+{
+    "trip": {
+        "language": "en-US",
+        "summary": {
+            "length": 6.045,
+            "time": 453
+        },
+        "locations": [{
+            "street": "Bolton Walk",
+            "lon": -119.870552,
+            "lat": 34.417866,
+            "type": "break"
+        }, {
+            "street": "Pine",
+            "lon": -119.826553,
+            "lat": 34.431778,
+            "type": "break"
+        }],
+        "units": "kilometers",
+        "legs": [{
+            "shape": "ykus`AdaiscFdUxB?iLsj@j@{GzLaB?cB?wM?gc@?qCkB?kV?kUFsFsF?o]\\aW?y\\NydB?woBkBkz@Mka@OcQ?eJ?qL?kG?uE?wg@?ck@?q`@Ou@?mEMee@Oyp@]McQOeOOaHMcRWiVMaIGwXOglAGmi@]cnAe@cp@?oIGuE{@qxBGcQWmi@_Cgm@m@_IgDyl@iHyjAGgCu@{k@kA{_@uD}fBkLieFqB}hAcAyVeAiM}Imt@mJww@ca@ghD}OktAu^y}BgDmUud@yqCmYyiBqWebB}TaqAqHwXip@iiB{KsZaMc\\kBaHMmJ?aRxBmt@jAk_@vCmhApC_hAdE]fr@Nz_@OvYNfg@?dU\\fS?|Z]lE]rFm@lE?hB?",
+            "summary": {
+                "length": 6.045,
+                "time": 453
+            },
+            "maneuvers": [{
+                "travel_type": "car",
+                "travel_mode": "drive",
+                "begin_shape_index": 0,
+                "length": 0.039,
+                "end_shape_index": 1,
+                "instruction": "Drive south.",
+                "verbal_pre_transition_instruction": "Drive south for 40 meters. Then Turn left.",
+                "verbal_multi_cue": true,
+                "type": 1,
+                "time": 4
+            }, {
+                "travel_type": "car",
+                "verbal_pre_transition_instruction": "Turn left.",
+                "verbal_transition_alert_instruction": "Turn left.",
+                "length": 0.225,
+                "instruction": "Turn left.",
+                "end_shape_index": 8,
+                "type": 15,
+                "time": 39,
+                "verbal_post_transition_instruction": "Continue for 200 meters.",
+                "begin_shape_index": 1,
+                "travel_mode": "drive"
+            }, {
+                "travel_type": "car",
+                "travel_mode": "drive",
+                "verbal_pre_transition_instruction": "Turn right. Then Turn left onto Storke Road.",
+                "verbal_transition_alert_instruction": "Turn right.",
+                "length": 0.077,
+                "instruction": "Turn right.",
+                "end_shape_index": 11,
+                "type": 10,
+                "time": 18,
+                "verbal_multi_cue": true,
+                "verbal_post_transition_instruction": "Continue for 80 meters.",
+                "begin_shape_index": 8
+            }, {
+                "travel_type": "car",
+                "travel_mode": "drive",
+                "verbal_pre_transition_instruction": "Turn left onto Storke Road.",
+                "verbal_transition_alert_instruction": "Turn left onto Storke Road.",
+                "length": 1.210,
+                "instruction": "Turn left onto Storke Road.",
+                "end_shape_index": 32,
+                "type": 15,
+                "time": 107,
+                "verbal_post_transition_instruction": "Continue for 1.2 kilometers.",
+                "street_names": ["Storke Road"],
+                "begin_shape_index": 11
+            }, {
+                "travel_type": "car",
+                "travel_mode": "drive",
+                "verbal_pre_transition_instruction": "Turn right onto Hollister Avenue.",
+                "verbal_transition_alert_instruction": "Turn right onto Hollister Avenue.",
+                "length": 4.045,
+                "instruction": "Turn right onto Hollister Avenue.",
+                "end_shape_index": 81,
+                "type": 10,
+                "time": 219,
+                "verbal_post_transition_instruction": "Continue for 4 kilometers.",
+                "street_names": ["Hollister Avenue"],
+                "begin_shape_index": 32
+            }, {
+                "travel_type": "car",
+                "travel_mode": "drive",
+                "verbal_pre_transition_instruction": "Turn right onto Pine Avenue.",
+                "verbal_transition_alert_instruction": "Turn right onto Pine Avenue.",
+                "length": 0.450,
+                "instruction": "Turn right onto Pine Avenue.",
+                "end_shape_index": 93,
+                "type": 10,
+                "time": 66,
+                "verbal_post_transition_instruction": "Continue for 400 meters.",
+                "street_names": ["Pine Avenue"],
+                "begin_shape_index": 81
+            }, {
+                "travel_type": "car",
+                "travel_mode": "drive",
+                "begin_shape_index": 93,
+                "time": 0,
+                "type": 4,
+                "end_shape_index": 93,
+                "instruction": "You have arrived at Pine.",
+                "length": 0.000,
+                "verbal_transition_alert_instruction": "You will arrive at Pine.",
+                "verbal_pre_transition_instruction": "You have arrived at Pine."
+            }]
+        }],
+        "status_message": "Found route between points",
+        "status": 0
+    }
+}
