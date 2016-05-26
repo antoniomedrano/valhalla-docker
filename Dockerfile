@@ -15,22 +15,6 @@ RUN apt-get install -y git \
   software-properties-common \
   wget
 
-RUN git clone --depth=1 --recurse-submodules --single-branch --branch=master https://github.com/zeromq/libzmq.git && \
-  cd libzmq && \
-  ./autogen.sh && \
-  ./configure --without-libsodium && \
-  make -j4 && \
-  make install && \
-  cd ..
-
-RUN git clone --depth=1 --recurse-submodules --single-branch --branch=master https://github.com/kevinkreiser/prime_server.git && \
-  cd prime_server && \
-  ./autogen.sh && \
-  ./configure && \
-  make -j4 && \
-  make install && \
-  cd ..
-
 RUN git clone --depth=1 --recurse-submodules --single-branch --branch=master https://github.com/valhalla/mjolnir.git && \
   cd mjolnir && \
   ./scripts/dependencies.sh && \
@@ -55,11 +39,11 @@ RUN wget http://download.geofabrik.de/north-america/us/arizona-latest.osm.pbf
 RUN wget http://download.geofabrik.de/north-america/us/oregon-latest.osm.pbf
 
 RUN mkdir -p /data/valhalla
-RUN pbfadminbuilder -c conf/valhalla.json *.pbf
-RUN pbfgraphbuilder -c conf/valhalla.json *.pbf
+RUN valhalla_build_admins -c conf/valhalla.json *.pbf
+RUN valhalla_build_tiles -c conf/valhalla.json *.pbf
 
 RUN apt-get clean && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 EXPOSE 8002
-CMD ["tools/tyr_simple_service", "conf/valhalla.json"]
+CMD ["tools/valhalla_route_service", "conf/valhalla.json"]
