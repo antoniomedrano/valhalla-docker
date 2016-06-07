@@ -13,7 +13,8 @@ RUN apt-get install -y git \
   build-essential \
   libboost1.54-all-dev \
   software-properties-common \
-  wget
+  wget \
+  nano
 
 RUN git clone --depth=1 --recurse-submodules --single-branch --branch=master https://github.com/valhalla/mjolnir.git && \
   cd mjolnir && \
