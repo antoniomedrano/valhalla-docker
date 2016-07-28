@@ -1,4 +1,6 @@
-FROM ubuntu:trusty
+# Set the base image as Ubuntu 16.04
+FROM ubuntu:16.04
+
 #Ported from Dario Andrei's valhalla/valhalla-docker itself a port from tomtaylor/valhalla-docker
 MAINTAINER Tim Niblett <tniblett@arogi.com>
 
